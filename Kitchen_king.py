@@ -4,6 +4,8 @@ app = Flask (__name__)
 
 @app.route('/')
 
+postgresql://postgres:EKzXCReadsXbcExUVTemkPkUbpLPMaYZ@viaduct.proxy.rlwy.net:10535/railway
+
 def home():
     return render_template('index.html')
 @app.route('/feedback')
