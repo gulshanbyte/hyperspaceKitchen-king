@@ -1,10 +1,11 @@
+
 from flask import Flask , render_template , redirect , url_for, request
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask (__name__)
 
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:xsATAAJYKKFoTbtiKayOCjSKmiinPQFw@viaduct.proxy.rlwy.net:49669/railway'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite'
 app.config['SECRET_KEY'] = 'ALSKJFDAASDFSADFLSDKFASDF'
 
 db = SQLAlchemy(app)

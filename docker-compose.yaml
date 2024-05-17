@@ -1,3 +1,4 @@
+
 version: '3'
 services:
 
@@ -26,4 +27,3 @@ services:
         - "172.17.0.1:8080:8080"
         volumes:
         - ./servers.json:/pgadmin4/servers.json
-
