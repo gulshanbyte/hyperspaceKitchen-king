@@ -9,14 +9,14 @@
 		<title>Kitchen King Wrap</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="../static/css/main.css" />
-		<noscript><link rel="stylesheet" href="../static/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="{{url_for('static', filename='/css/main.css')}}" />
+		<noscript><link rel="stylesheet" href="{{url_for('static', filename='/css/noscript')}}" /></noscript>
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
 			<header id="header">
-				<a href="/templates/index.html" class="title">BL.Treads</a>
+				<a href="../templates/index.html" class="title">BL.Treads</a>
 				<nav>
 					<ul>
 						<li><a href="index.html">Home</a></li>
