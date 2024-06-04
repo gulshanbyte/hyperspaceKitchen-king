@@ -24,6 +24,14 @@ with app.app_context():
 def home():
     return render_template('index.html')
 
+@app.route('/templates')
+def learn_more():
+    return render_template('generic.html')
+
+@app.route('/elements')
+def elements():
+    return render_template('/elements.html')
+
 @app.route('/feedback', methods=['GET', 'POST'])
 def submit_feedback():
     if request.method == "POST":
