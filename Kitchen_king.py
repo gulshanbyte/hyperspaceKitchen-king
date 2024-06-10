@@ -30,7 +30,7 @@ def learn_more():
 
 @app.route('/elements')
 def elements():
-    return render_template('/elements.html')
+    return render_template('elements.html')
 
 @app.route('/feedback', methods=['GET', 'POST'])
 def submit_feedback():
