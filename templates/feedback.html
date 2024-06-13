@@ -1,21 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>your Feedback </title>
-</head>
-<body>
-    <h1>thanks for your Feedback</h1>
-    <h2><a href="/#intro"> back to home</a></h2>
-    <table border="1">
-        {% for item in data %}
-        <tr> 
-            <td>{{ item.full_name }}</td>
-            <td>{{ item.email }}</td>
-            <td>{{ item.message }}</td>
-        </tr>
-       {% endfor %}
-    </table>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block main %}
+
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusantium consequuntur ut similique, facere laboriosam esse sit nemo eligendi mollitia repudiandae qui eos itaque vel, est saepe excepturi rerum explicabo.
+</p>
+
+{% endblock %}
