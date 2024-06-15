@@ -28,6 +28,10 @@ def home():
 def learn_more():
     return render_template('generic.html')
 
+@app.route('/authorities')
+def auth():
+    return render_template('gallery.html')
+
 @app.route('/elements')
 def elements():
     return render_template('elements.html')
