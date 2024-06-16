@@ -71,4 +71,5 @@ def submit_feedback():
     return render_template("feedback.html", data=data)
 
 
-app.run(debug=True, host="0.0.0.0", port=8080, load_dotenv=True)
+if __name__ == "__main__":
+    app.run(debug=True, host="0.0.0.0", port=8080, load_dotenv=True)
