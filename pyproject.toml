@@ -1,19 +1,19 @@
 [tool.poetry]
-name = "hyperspacekitchen king"
+name = "hyperspacekitchen-king"
 version = "0.1.0"
-description = "A BL thread marketing website"
-authors = ["Gulshanbyte"]
+description = "Main website for kitchenqueen.org.in"
+authors = ["kamal Kumar <kamal.kumar9@outlook.com>"]
 license = "MIT"
+readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.10"
-Flask = "^3.0.3"
-Flask-SQLAlchemy = "^3.1.1"
-docker = "^7.0.0"
-SQLAlchemy = "^2.0.30"
+python = "^3.12"
+flask = "^3.0.3"
+psycopg2-binary = "^2.9.9"
+flask-sqlalchemy = "^3.1.1"
+python-dotenv = "^1.0.1"
 
-[tool.poetry.dev-dependencies]
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"

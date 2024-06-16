@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block main%}
+<!-- Header -->
+<header id="header">
+	<a href="{{url_for('home')}}" class="major">BL.THREAD</a>
+	<nav>
+		<ul>
+			<li><a href="{{url_for('home')}}">Home</a></li>
+			<li><a href="{{url_for('food_packaging')}}" class="active">Generic</a></li>
+			<li><a href="{{url_for('elements')}}">Elements</a></li>
+		</ul>
+	</nav>
+</header>
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+	<!-- Main -->
+	<section id="main" class="wrapper">
+		<div class="inner">
+			<h2 class="major"><u>TRUST AND INTIGRITY</u></h2>
+			<span class="image fit"><img src="images/header.jpg" alt="" /></span>
+			<p>Dhendrerit tristique.</p>
+			<p>lorem ipsum dolor.</p>
+		</div>
+	</section>
+
+</div>
+
+
+{% endblock %}
