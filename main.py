@@ -26,6 +26,18 @@ with app.app_context():
 def home():
     return render_template("index.html")
 
+@app.route("/elements")
+def elements():
+    return render_template("elements.html")
+
+@app.route("/generic")
+def generic():
+    return render_template("generic.html")
+
+@app.route("/authorization")
+def authorization():
+    return render_template("Authorization.html")
+
 
 @app.route("/feedback", methods=["GET", "POST"])
 def submit_feedback():
@@ -40,6 +52,7 @@ def submit_feedback():
         db.session.commit()  # entry commited into db
 
     data = form_inputs.query.all()  # SELECT * from form_inputs
+
 
     return render_template("feedback.html", data=data)
 
