@@ -62,7 +62,7 @@
 							of CII in 2000 and 2006.
 							We are commited to serve best posible quality to our customers and distributes.</p>
 						<ul class="actions">
-							<li><a href="/elements" class="button" style="color: blue;">Learn more</a></li>
+							<li><a href="elements.html" class="button" style="color: blue;">Learn more</a></li>
 						</ul>
 					</div>
 				</div>
@@ -82,7 +82,7 @@
 							your product's appeal. Join us in shaping a future where brilliance meets responsibility.
 						</p>
 						<ul class="actions">
-							<li><a href="/generic" class="button">Learn more</a></li>
+							<li><a href="generic.html" class="button">Learn more</a></li>
 						</ul>
 					</div>
 				</div>
@@ -101,7 +101,7 @@
 							sub-segment.
 							Feel free to contact with us</p>
 						<ul class="actions">
-							<li><a href="/generic" class="button">Learn more</a></li>
+							<li><a href="generic.html" class="button">Learn more</a></li>
 						</ul>
 					</div>
 				</div>
@@ -194,7 +194,36 @@
 					Take your business to the next level – connect with us and see what we can achieve together.</p>
 				<div class="split style1">
 					<section>
-						<form method="post" action="{{ url_for('submit_feedback') }}">
+
+						<form action="https://api.web3forms.com/submit" method="POST">
+							<div class="fields">
+								<!-- Replace with your Access Key -->
+								<input type="hidden" name="access_key" value="110ccc10-76a1-4644-bf51-ecd31b978e1b">
+
+								<!-- Form Inputs. Each input must have a name="" attribute -->
+								<div class="field half">
+									<label for="name">Name</label>
+									<input type="text" name="name" required>
+								</div>
+								<div class="field half">
+									<label for="email">Email</label>
+									<input type="email" name="email" required>
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea name="message" required></textarea>
+								</div>
+
+								<!-- Honeypot Spam Protection -->
+								<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+								<ul class="actions">
+									<li><button type="submit" class="button submit" style="margin-top: 20px; margin-left: 30px;">Submit Form</button></li>
+								</ul>
+							</div>
+						</form>
+
+						<!-- <form method="post" action="{{ url_for('submit_feedback') }}">
 							<div class="fields">
 								<div class="field half">
 									<label for="name">Name</label>
@@ -212,7 +241,7 @@
 							<ul class="actions">
 								<li><a href="feedback.html" class="button submit">Send Message</a></li>
 							</ul>
-						</form>
+						</form> -->
 					</section>
 					<section>
 						<ul class="contact">
